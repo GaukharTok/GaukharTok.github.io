@@ -6,12 +6,28 @@
     <title>Document</title>
     <style>
       #main {
+        display: flex;
         margin: 20px;
         background-color: rgb(247, 244, 244);
         border: 1px, solid, black;
         border-radius: 10px;
-        width: 350px;
-        padding: 5px;
+        width: 95vw;
+        height: 98vh;
+        padding: 25px;
+      }
+      .siteBar {
+        border: 1px solid rgb(158, 153, 153);
+
+        padding-top: 25px;
+        padding-left: 5px;
+        width: 10%;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .siteBar a:hover {
+        background-color: #555;
       }
 
       #portfolio {
@@ -19,26 +35,62 @@
         border: 1px black;
         margin: 10px;
       }
+      #aboutMe {
+        margin-left: 5px;
+        border: 1px, solid, black;
+        border-radius: 10px;
+        padding-left: 10px;
+        text-align: center;
+      }
       img {
         width: 50%;
+        box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+      }
+      a {
+        color: black;
+        font-size: 22px;
+        text-decoration: none;
+      }
+      button {
+        height: 35px;
+        border-radius: 10px;
+      }
+      .button:hover {
+        background-color: #b7b0b0;
+      }
+      #link-to-portfolio {
+        font-size: 12px;
+      }
+      #forButton {
+        margin: 30px;
       }
     </style>
   </head>
   <body>
     <div id="main">
+      <div class="siteBar">
+        <a href="#">HOME</a>
+        <a href="#">ABOUT ME</a>
+        <a href="#">EXPIRIENCE</a>
+        <a href="#">CONTACT</a>
+        <a href="#">FEEDBACK</a>
+      </div>
       <div id="aboutMe">
         <h1>My name is Gaukhar T.</h1>
         <h2>I am IT Developer(Junior)</h2>
-        <h3>
-          You can support me by making any feedbacks on my workd, that are on
-          the link below
-        </h3>
+
         <img
           src="/women-developers-pay-euqality-coding-programmers-gender-pay-gap.webp"
           alt=""
         />
         <!-- <button id="portfolio" class="button-style">VIEW my WORKS</button> -->
-        <button><a href="https://www.google.com">VIEW my Works</a></button>
+        <div id="forButton">
+          <button class="button">
+            <a id="link-to-portfolio" href="https://www.google.com"
+              >VIEW my Works</a
+            >
+          </button>
+        </div>
       </div>
     </div>
     <!-- <h1>Github</h1> -->
