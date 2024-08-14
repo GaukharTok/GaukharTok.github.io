@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
+      #mainDiv {
+        margin: 95px 150px 90px 150px;
+        gap: 205px;
+        border: 1px solid black;
+        padding: 10px;
+        width: 30%;
+        height: 40vh;
+        background-color: rgb(217, 240, 148);
+      }
+      #headerline {
+        display: flex;
+        gap: 25px;
+        margin-top: 50px;
+      }
+      #headerline p {
+        font-size: 22px;
+        border-bottom: 2px solid #090909;
+        padding-bottom: 10px;
+        margin: 0;
+      }
+      #headerline::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #007bff;
+        z-index: -1;
+      }
+
+      #addtask {
+        display: flex;
+        align-items: center;
+        margin-top: 50px;
+      }
+      input {
+        margin-right: 10px;
+        padding: 10px;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+      }
+      button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #007bff;
+        color: white;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #76aeeb;
+      }
+      #doitnow {
+        margin-top: 25px;
+        background-color: blanchedalmond;
+        width: 75px;
+      }
+      li {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px;
+        font-size: 26px;
+        width: 50%;
+        background-color: antiquewhite;
+        border-radius: 10px;
+      }
+      .todo {
+        visibility: visible;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="mainDiv">
+      <div id="todolist">
+        <h1 class="todo">TODO List Demo App</h1>
+      </div>
+      <div id="doitnow">
+        <p>Do it now</p>
+      </div>
+      <div id="addtask">
+        <input type="text" id="name" name="name" />
+        <button onclick="addTask()">Add Task</button>
+      </div>
+      <ul></ul>
+      <h2 style="visibility: hidden">No tasks</h2>
+    </div>
+    <script src="/homewokr-1/indexnew.js"></script>
+  </body>
+</html>
