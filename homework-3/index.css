@@ -1,0 +1,30 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  height: 100vh;
+  margin: 0;
+}
+.user-card {
+  width: 20%;
+  height: 35%;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+.profile-pic {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin: 15px 5px 5px 95px;
+}
+
+.user-name,
+.user-bio,
+.contact-info {
+  margin: 10px 10px 0px 35px;
+}
