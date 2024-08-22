@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        width: 100%;
+        gap: 15px;
+      }
+      #result {
+        border: 1 px, solid black;
+        border-radius: 10px;
+        color: tomato;
+        font-weight: bold;
+      }
+
+      button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 15px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        width: 100%;
+      }
+
+      /* Стили для кнопки при наведении */
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <h1>Currency Converter</h1>
+
+      <label for="amount">Amount:</label>
+      <input type="number" id="amount" step="0.01" placeholder="Enter amount" />
+
+      <label for="from-currency">From:</label>
+      <select id="from-currency">
+        <option value="usd">USD</option>
+        <option value="kzt">KZT</option>
+        <option value="eur">EUR</option>
+        <option value="cny">CNY</option>
+      </select>
+
+      <label for="to-currency">To:</label>
+      <select id="to-currency">
+        <option value="usd">USD</option>
+        <option value="kzt">KZT</option>
+        <option value="eur">EUR</option>
+        <option value="cny">CNY</option>
+      </select>
+
+      <button>Convert</button>
+
+      <h2 id="result"></h2>
+    </div>
+
+    <script src="/homework-4/index.js"></script>
+  </body>
+</html>
