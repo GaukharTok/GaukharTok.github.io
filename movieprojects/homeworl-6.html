@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/movieprojects/homeworl-6.css" />
+  </head>
+  <body>
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search for movies..." />
+      <button id="searchButton">Search</button>
+    </div>
+    <div id="genre-buttons" class="genres"></div>
+    <div id="allMovies">
+      <div class="popularMovies">
+        <div id="popular"><h1>Popular movies</h1></div>
+        <div class="movies"></div>
+      </div>
+      <!-- Удаляем старый блок .column -->
+    </div>
+
+    <div class="favorites-container">
+      <h1 class="favorites-title">My Favorites</h1>
+      <div class="favorites"></div>
+    </div>
+
+    <div class="main">
+      <div id="movie-container"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/movieprojects/indexmovie.js"></script>
+  </body>
+</html>
