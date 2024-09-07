@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecomerce</title>
+    <link rel="stylesheet" href="/shopproject/index.css" type="text/css" />
+    <link rel="stylesheet" href="/shopproject/indexsecondpage.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/3a6d973ca6.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="mainnazgul">
+
+      <div class="firstdivNazgul">
+        <div class="sidenav">
+          <div class="admin">
+             <a href="#about">
+              <div class="begin"><div class="locker"><i class="fa-solid fa-lock"></i></div>
+              <div class="h2admin"><h2>ADMIN</h2> <p>ecommerce</p></div>
+            </div>
+            </a>
+      
+          </div>
+          <a href="#about"><i class="fa-solid fa-bars-staggered"></i>Dashboard</a>
+  
+          <button class="dropdown-btn"><i class="fa-solid fa-box-archive"></i>Products
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="#">Add product</a>
+            <a href="/shopproject/customer.html">Product list</a>
+            <a href="#">Categories</a>
+            <a href="#">Brands</a>
+          </div>
+          <button class="dropdown-btn"><i class="fa-solid fa-cart-shopping"></i>Orders
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+          <a href="#customers"><i class="fa-solid fa-user-group"></i>Customers</a>
+          <a href="#statistic"><i class="fa-solid fa-chart-simple"></i>Statistic</a>
+          <a href="#reviews"><i class="fa-solid fa-message"></i>Reviews</a>
+          <a href="#contact"><i class="fa-solid fa-money-bill"></i>Transactions</a>
+          
+        </div>
+        </div>
+              
+      <div class="secondivnazgul">
+        <div class="mainCentralPart">
+            <div class="Search"><i class="fa-solid fa-magnifying-glass"></i><input class="searchbtn" type="text" placeholder="Search"></input></div>
+            <div class="icons">
+              <div class="bell">
+                <a id="bellicon"><i class="fa-regular fa-bell"></i></a>
+              </div>
+              <div class="accountImage">
+               <button class="add-to cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                 </div>
+            </div>
+      </div>
+      <div class="secondpage">
+        <div class="createaproduct">
+            <h1>Create product</h1>
+        </div>
+<div class="createmainpart">
+  <div class="totransform">
+        <div class="form">
+            <form method="post" action="https://solar-poised-salad.glitch.me/gaukhar">
+              <label for="image">Enter image URL</label><br>
+              <input type="text" id="image" size="30" name="name" value="">
+              <label for="titleProduct"><p>Product title</p></label><br>
+              <input type="text" id="titleProduct" style="  width: 95%;
+              border: 2px solid rgb(220, 219, 219);
+              border-radius: 5px; height: 24px;" size="91" name="title" value="">
+                <br><br>
+                <label  for="messageField"><p>Description</p></label><br>
+                <textarea name="message" id="description" style="width: 80%; height: 200px;"></textarea>
+                <br><br>
+            </form>
+            <!-- <label for="images">Images</label>
+            <div class="imageholder">
+              <div class="box"></div>
+              <div class="box"></div>
+              <div class="box"></div>
+              <div class="box"></div>
+        
+            </div> -->
+        </div>
+        <!-- <div class="tagsbefore_category">
+          <label for="tags">Tags</label>
+          <input id ="x-tags"placeholder="x">
+      
+        </div> -->
+        <div class="tags">
+          <div class="tagscategory">
+            <div class="dropdownlist-category">
+              <p>Category</p>
+            </div>
+            <label>
+              <input style="  width: 95%;
+              border: 2px solid rgb(220, 219, 219);
+              border-radius: 5px;" placeholder="Select" list="categories" name="category" id="categoryInput" />
+            </label>
+            <datalist id="categories">
+              <option value="For Men">
+              <option value="For Women">
+              <option value="Accessories">
+              <option value="For Home">
+              <option value="Electronics">
+              <option value="Other">
+            </datalist>
+          </div>
+        </div>
+        
+        <div class="tagscategory-downpart">
+          <div class="price-down-part">
+            <div class="dropdownlist-category">
+              <p>Price</p>
+            </div>
+            <label>
+              <input style="  width: 95%;
+              border: 2px solid rgb(220, 219, 219);
+              border-radius: 5px;" id="priceInput" placeholder="" />
+            </label>
+          </div>
+          <div class="usd">
+            <div class="dropdownlist-category">
+              <div class="empty"></div>
+            </div>
+            <!-- <label>
+              <input placeholder="USD" id="usdInput" />
+            </label> -->
+          </div>
+        </div>
+        <div class = "checkbox">  
+            <div><input type="checkbox"></div>  
+           <div> <label> <p>Publish on site</p></label></div>  
+          </div>
+          <button id="add">Add</button>
+      </div>
+    </div>
+      </div>
+    </div>
+    
+
+
+
+    <!-- <input type="submit" value="Submit"> -->
+
+
+    <script>
+      var dropdown = document.getElementsByClassName("dropdown-btn");
+      var i;
+    
+      for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var dropdownContent = this.nextElementSibling;
+          if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+          } else {
+            dropdownContent.style.display = "block";
+          }
+        });
+      }
+      </script>
+        <script src="/shopproject/index.js"></script>
+  </body>
+</html>

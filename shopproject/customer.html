@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/shopproject/customer.css">
+    <script src="https://kit.fontawesome.com/3a6d973ca6.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+
+    <div class="mainnazgul">
+                      
+                    
+              <div class="secondivnazgul">
+            <div class="mainCentralPart">
+              <!--search part-->
+              <div class="Search"><i class="fa-solid fa-magnifying-glass" ></i><input class="searchbtn" type="text" placeholder="Search"></input></div>
+              <div class="icons">
+                <div class="bell">
+                  <a id="bellicon"><i class="fa-regular fa-bell"></i></a>
+                </div>
+                <div class="accountImage">
+                <a href="/shopproject/cart.html"><i class="fa-solid fa-cart-shopping"></i></a> 
+                   </div>
+              </div>
+           
+                </div> 
+        
+              
+              <div class="pro">
+              <!-- product grid-->
+              
+        <div class="productGridAndListOfProducts">
+          <div class="productGrid">
+            <div class="h3"><h3>Products grid</h3></div>
+           
+          </div>
+              <div class="searchAndCategory">
+                <!-- <div class="poisk">
+                  <input id="search" text="text" placeholder="Search"></input>
+                </div> -->
+        
+                <div>
+        
+                
+                <input type="text" id="search" placeholder="">
+                <button class = "poisk"onclick="search()">Search</button>
+                <div id="results"></div>
+              </div>
+               
+              </div>
+        <!--variety of products-->
+        
+        <div class="container">
+          <div class="productList">
+        
+          </div>
+        </div>
+       
+        </div>
+        </div>
+        </div>
+        
+              </div>
+            </div>
+            
+        
+        
+        
+            <div class="modal">
+              <div class="modal-content">
+               
+            <div class="input-div">
+              <span class="close">x</span>
+                <input id="image-url-modal" type="text" placeholder="Image URL">
+                <input id="product-title-modal" type="text" placeholder="Product name">
+               <textarea  id="description-modal" cols="30" rows="10" placeholder="Description"></textarea> 
+               <input type="number"  id="price-modal" placeholder="Price">
+              </div>
+                <div class='action'>
+                  <button data-index="${product.id}" class='save'>Save</button>
+                  
+              </div>
+            </div>
+        
+        </div>
+              <script src="/customer.js"></script>
+            
+        
+        
+        
+        
+             
+        
+                     
+              
+              
+        
+    <script src="/shopproject/customer.js"></script>
+  </body>
+</html>

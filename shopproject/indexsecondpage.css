@@ -1,0 +1,136 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+label {
+  color: #6a6868;
+}
+select {
+  color: #848484;
+}
+p {
+  color: #6a6868;
+}
+.secondpage {
+  margin: 60px 85px 200px 400px;
+  width: 90%;
+  display: block;
+  justify-content: center;
+  align-content: center;
+}
+
+.secondpageimage {
+  margin-top: 15px;
+}
+
+.secondpageimage > p {
+  margin-top: 30px;
+}
+.createmainpart {
+  background-color: white;
+  width: 50%;
+  height: 90%;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  height: 93%;
+}
+
+.form {
+  padding-top: 15px;
+  width: 100%;
+}
+form {
+  width: 100%;
+}
+#image,
+#title {
+  width: 95%;
+  border: 2px solid rgb(220, 219, 219);
+  border-radius: 5px;
+  height: 25px;
+  color: #6a6868;
+}
+
+#description {
+  height: 250px;
+  width: 95%;
+  border: 2px solid rgb(220, 219, 219);
+  border-radius: 5px;
+  height: 25px;
+  color: #6a6868;
+}
+.totransform {
+  margin-left: 20px;
+  margin-top: 25px;
+}
+#messageField {
+  width: 95%;
+  border: 2px solid rgb(220, 219, 219);
+  border-radius: 5px;
+}
+#x-tags {
+  width: 95%;
+  border: 2px solid rgb(220, 219, 219);
+  border-radius: 5px;
+  height: 25px;
+}
+.imageholder {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 3%;
+  margin-right: 4.3%;
+}
+.box {
+  width: 90%;
+  height: 12vh;
+  border: 1px solid rgb(229, 229, 229);
+  border-radius: 5px;
+  margin-bottom: 3%;
+}
+.secondpage img {
+  border: 1px solid rgb(250, 248, 248);
+}
+
+.tags {
+  display: flex;
+  margin-top: 45px;
+  gap: 15px;
+}
+
+.dropdownlist-category > input {
+  border: 2px solid rgb(220, 219, 219);
+  border-radius: 5px;
+  height: 25px;
+}
+.tagcategory {
+  display: flex;
+  gap: 10px;
+}
+
+.tagscategory-downpart {
+  display: flex;
+  gap: 10px;
+}
+.empty {
+  margin-top: 17px;
+}
+
+.checkbox {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+#add {
+  background-color: #23579b;
+  color: #fff;
+  border: none;
+  width: 130px;
+  height: 25px;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}

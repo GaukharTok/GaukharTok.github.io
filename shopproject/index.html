@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecomerce</title>
+    <link rel="stylesheet" href="/shopproject/indexx.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/3a6d973ca6.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="mainnazgul">
+<!-- sidebar-->
+      <div class="firstdivNazgul">
+        <div class="sidenav">
+          <div class="admin">
+             <a href="#about">
+              <div class="begin"><div class="locker"><i class="fa-solid fa-lock"></i></div>
+              <div class="h2admin"><h2>ADMIN</h2> <p>ecommerce</p></div>
+            </div>
+            </a>
+      
+          </div>
+          <a href="#about"><i class="fa-solid fa-bars-staggered"></i>Dashboard</a>
+  
+          <button class="dropdown-btn"><i class="fa-solid fa-box-archive"></i>Products
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="#">Add product</a>
+            <a href="/shopproject/customer.html">Product list</a>
+            <a href="#">Categories</a>
+            <a href="#">Brands</a>
+          </div>
+          <button class="dropdown-btn"><i class="fa-solid fa-cart-shopping"></i>Orders
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+          <a href="#customers"><i class="fa-solid fa-user-group"></i>Customers</a>
+          <a href="#statistic"><i class="fa-solid fa-chart-simple"></i>Statistic</a>
+          <a href="#reviews"><i class="fa-solid fa-message"></i>Reviews</a>
+          <a href="#contact"><i class="fa-solid fa-money-bill"></i>Transactions</a>
+          
+        </div>
+        </div>
+
+      <!-- sidebar-->
+          
+            
+      <div class="secondivnazgul">
+    <div class="mainCentralPart">
+      <!--search part-->
+      <div class="Search"><i class="fa-solid fa-magnifying-glass" ></i><input class="searchbtn" type="text" placeholder="Search"></input></div>
+      <div class="icons">
+        <div class="bell">
+          <a id="bellicon"><i class="fa-regular fa-bell"></i></a>
+        </div>
+        <div class="accountImage">
+        <button id="button-cart"><i id='icon-cart' class="fa-solid fa-user"></i></button>
+           </div>
+      </div>
+   
+        </div> 
+
+      
+      <div class="pro">
+      <!-- product grid-->
+      
+<div class="productGridAndListOfProducts">
+  <div class="productGrid">
+    <div class="h3"><h3>Products grid</h3></div>
+    <div class="createNew">
+        <a href = "/shopproject/indexsecondpage.html"><button class="createNewbtn"> + Create new</button></a>
+    </div>
+  </div>
+      <div class="searchAndCategory">
+        <!-- <div class="poisk">
+          <input id="search" text="text" placeholder="Search"></input>
+        </div> -->
+
+        <div>
+
+        
+        <input type="text" id="search" placeholder="">
+        <button class = "poisk"onclick="search()">Search</button>
+        <div id="results"></div>
+      </div>
+        <div class="kategoriya">
+    <select class="selectCategory">
+        <option value="1">Category</option>
+        <option value="1">FOR MEN</option>
+        <option value="2">FOR WOMEN</option>
+        <option value="3">FOR KIDS</option>
+        <option value="4">FOR HOUSE</option>
+        <option value="5">OTHERS</option>
+    </select>
+        <div class="subkategoriya">
+          <button id="lastAdded">Last Added</button>
+        </div>
+      </div>
+      </div>
+<!--variety of products-->
+
+<div class="container">
+  <div class="productList"></div>
+  
+  <!-- container for rendered products -->
+ 
+</div>
+
+</div>
+</div>
+</div>
+
+      </div>
+    </div>
+    
+
+
+    <div class="modal">
+      <div class="modal-content">
+        <div class="input-div">
+          <span class="close">x</span>
+          <input id="image-url-modal" type="text" placeholder="Image URL">
+          <input id="product-title-modal" type="text" placeholder="Product name">
+          <textarea id="description-modal" cols="30" rows="10" placeholder="Description"></textarea>
+          <input type="number" id="price-modal" placeholder="Price">
+          <select id="category-modal" class="selectCategory">
+            <option value="FOR MEN">FOR MEN</option>
+            <option value="FOR WOMEN">FOR WOMEN</option>
+            <option value="FOR KIDS">FOR KIDS</option>
+            <option value="FOR HOUSE">FOR HOUSE</option>
+            <option value="OTHERS">OTHERS</option>
+          </select>
+        </div>
+        <div class='action'>
+          <button data-index="${product.id}" class='save'>Save</button>
+        </div>
+      </div>
+    </div>
+
+
+
+    <script>
+      var dropdown = document.getElementsByClassName("dropdown-btn");
+      var i;
+    
+      for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var dropdownContent = this.nextElementSibling;
+          if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+          } else {
+            dropdownContent.style.display = "block";
+          }
+        });
+      }
+
+
+      </script>
+      <script src="/shopproject/indexmain.js"></script>
+    
+
+
+
+
+     
+
+             
+      
+      
+
+  </body>
+</html>
