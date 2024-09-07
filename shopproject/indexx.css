@@ -383,7 +383,7 @@ i {
   padding: 10px;
 }
 
-.item .priceBtn button {
+.item .priceBtn .edit {
   background-color: #23579b;
   color: white;
   border: none;
@@ -393,6 +393,15 @@ i {
   transition: background-color 0.3s;
 }
 
+.item .priceBtn .delete {
+  background-color: #e60023;
+  color: white;
+  border: none;
+  /border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
 .item .priceBtn button:hover {
   background-color: #23579b;
 }
